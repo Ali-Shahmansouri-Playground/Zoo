@@ -38,7 +38,7 @@ namespace Zoo
 
         public void GetAdoptableAnimals()
         {
-            Console.WriteLine("\n And you can adopt: ");
+            Console.WriteLine("\nAnd you can adopt: ");
 
             var type = typeof(IPet);
             var t = AppDomain.CurrentDomain.GetAssemblies()

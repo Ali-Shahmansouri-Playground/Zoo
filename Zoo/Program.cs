@@ -10,8 +10,9 @@ myZoo.AddAnimal(new Animal[]
  new Crocodile(new DateTime(2001, 2, 3)),
  new Fish(new DateTime(2002, 3, 4)),
  new Lion(new DateTime(2003, 5, 6)),
- new Turtle(new DateTime(2004, 6, 7))
-});
+ new Turtle(new DateTime(2004, 6, 7)),
+ new Dog(new DateTime(2005, 7, 8)),
+}); ;
 
 myZoo.GetAnimalDetails();
 
