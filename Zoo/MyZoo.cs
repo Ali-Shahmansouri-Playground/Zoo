@@ -36,5 +36,18 @@ namespace Zoo
 
         }
 
+        public void GetAdoptableAnimals()
+        {
+            Console.WriteLine("\n And you can adopt: ");
+
+            var type = typeof(IPet);
+            var t = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(s => s.GetTypes())
+                .Where(p => type.IsAssignableFrom(p)).ToArray();
+            for (int i = 0; i < t.Length - 1; i++)
+            {
+                Console.WriteLine(t[i].Name);
+            }
+        }
     }
 }

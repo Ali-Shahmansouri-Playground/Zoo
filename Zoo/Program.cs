@@ -14,3 +14,5 @@ myZoo.AddAnimal(new Animal[]
 });
 
 myZoo.GetAnimalDetails();
+
+myZoo.GetAdoptableAnimals();
