@@ -12,3 +12,5 @@ myZoo.AddAnimal(new Animal[]
  new Lion(new DateTime(2003, 5, 6)),
  new Turtle(new DateTime(2004, 6, 7))
 });
+
+myZoo.GetAnimalDetails();

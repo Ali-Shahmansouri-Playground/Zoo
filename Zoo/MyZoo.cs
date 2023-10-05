@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Zoo.Animals;
+using Zoo.Animals.Interfaces;
 
 namespace Zoo
 {
@@ -26,7 +28,13 @@ namespace Zoo
 
         public void GetAnimalDetails()
         {
-            //TODO: Implement
+            Console.WriteLine("Animals in this zoo are: ");
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal.GetType().Name);
+            }
+
         }
+
     }
 }
